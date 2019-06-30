@@ -8,7 +8,7 @@ import (
 
 func main() {
 	for {
-		fmt.Print("user> ")
+		fmt.Print("golisp> ")
 		reader := bufio.NewReader(os.Stdin)
 		text, _ := reader.ReadString('\n')
 		fmt.Print(text)
