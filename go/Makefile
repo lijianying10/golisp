@@ -1,2 +1,4 @@
-step0_repl:
-	go build step0_repl.go
+.PHONY: all
+
+%:
+	go build -o golisp main.go
