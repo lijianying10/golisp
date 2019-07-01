@@ -1,16 +1,7 @@
 package main
 
-import (
-	"bufio"
-	"fmt"
-	"os"
-)
+import "github.com/lijianying10/golisp/go/runtime"
 
 func main() {
-	for {
-		fmt.Print("golisp> ")
-		reader := bufio.NewReader(os.Stdin)
-		text, _ := reader.ReadString('\n')
-		fmt.Print(text)
-	}
+	runtime.GOLISP()
 }
